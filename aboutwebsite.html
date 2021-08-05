@@ -1,0 +1,441 @@
+
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>About Page</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <script>
+            $(function(){
+              $('#closemodal').click(function(){
+                $('#signup').modal('show');
+              });
+            });
+            </script>
+            </head>
+<body>
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/amazonlogo.jpg" width="100" height="40"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="homewebsite.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+              <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutwebsite.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+              <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
+            </svg>About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="amazonprimewebsite.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+              <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
+            </svg> Amazon Prime</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="serviceswebsite.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+              </svg>Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-bs-toggle="dropdown"  href="#fashion">Fashion</a>
+              
+              </li>
+              <li><a class="dropdown-item" href="#grocery">Grocery</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#electronic">Electronics</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page" data-bs-toggle="modal" data-bs-target="#signin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+              <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+            </svg>Sign In</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light " type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- about banner -->
+
+    <div class="container mt-2">
+        <div class="row">
+
+            <div class=" col-8 ">
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/amazonabout3.jpg"  alt="..." width="750" height="298">
+      </div>
+      <div class="carousel-item ">
+        <img src="img/amazonabout.jpg"  alt="..." width="750" height="300">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+</div>
+
+<div class="col-4 ">
+<img src="img/amazonabout2.png" class="img-thumbnail" alt="..." width="490" height="355">
+</div>
+
+  </div>
+</div>
+
+<!-- table -->
+<span class="d-block p-2 bg-primary text-white mt-1 text-center fs-4" >Amazon.in Help:FAQs</span>
+<div class="container mt-3">
+    <div class="col-12">
+<table class="table table-bordered">
+    <thead class='table-primary'>
+      <tr>
+        <th scope="col" class="fs-6">Time Period</th>
+        <th scope="col" class="text-center fs-5">Key developments at Amazon</th>
+      </tr>
+    </thead>
+    <tbody class="table-light ">
+      <tr>
+        <th scope="row">1994–1998</th>
+        <td>Amazon starts off as an online bookstore selling books, primarily competing with local booksellers and Barnes & Noble. It IPOs in 1997.</td>
+      </tr>
+      <tr>
+        <th scope="row">1998–2004</th>
+        <td>Amazon starts to expand its services beyond books. It also starts offering convenience services, such as Free Super Savers Shipping.</td>
+      </tr>
+      <tr>
+        <th scope="row">2005–2011</th>
+        <td>Amazon moves into the cloud computing area with Amazon AWS, as well as the crowdsourcing area with Amazon Mechanical Turk. By being an early player, it eventually dominates the cloud computing scene, allowing it to control much of the physical infrastructure of the Internet.[70] Amazon also offers the Amazon Kindle for people to purchase their books as eBooks, and by 2010, more people buy ebooks than physical books off of Amazon.</td>
+      </tr>
+      <tr>
+        <th scope="row">2011–2015</th>
+        <td>Amazon starts offering streaming services like Amazon Music and Amazon Video. By 2015, its market capitalization surpasses that of Walmart.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<!-- FAQ -->
+<div class="container ">
+    <div class="row">
+        <div class="col-12">
+            <span class="d-block p-2 bg-primary text-white mt-1 text-center fs-4" >Amazon.in Help:FAQs</span>
+<div class="accordion bg-light" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            When selling on Amazon do I pay for shipping?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          When you purchase a new, refurbished, used, or collectible item from a seller at Amazon Marketplace, you pay immediately, online. Included in your payment is a pre-calculated fee for shipping. Your shipping fees when buying items from a seller on Amazon.com depend on the type of product you purchase. 
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How do I start an online store with Amazon?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <ol>
+              <li>Before you start. Choose a selling plan. Consider your selling strategy. Create a seller account.</li>
+              <li>Adding your products. Product categories. Product details.</li>
+              <li>Attracting customers. Provide fast shipping. Advertise your offers. </li>
+              <li>After your first sale. Get customer reviews. Grow your business.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What is most sold item on Amazon?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+                <li>Alexa TV Remote.</li>
+                <li>Alexa Echo Dot Smart Speaker.</li>
+                <li>Fujifilm INSTAX Mini Film.</li>
+                <li>Fujifilm Instax Camera.</li>
+                <li>Instant Pot.</li>
+                <li>$10 and $20 Playstation Store Gift Card.</li>
+                <li>Donkey Kong Nintendo Switch Game.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            How do I find most sold items on Amazon?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            To start, you can go to the Amazon Best Sellers page where you'll be able to quickly find the most popular items on the website. The list is based on sales volume and is updated hourly with their most recent data. It's divided by category so you can see which products are most popular in every Amazon category.
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Will Amazon refund missing package?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Amazon Prime members receive very fast shipping, and if the package does not arrive, the company has a no-questions-asked policy and will provide a refund after 36 hours. If packages are late, Amazon will credit your account for the inconvenience. Go here to report a package missing from Amazon.
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            How does selling on Amazon.in work?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Selling on Amazon.in is easy. First you list the products that you want to sell on Amazon.in marketplace. Customer sees your product and makes a purchase. You will receive a notification to ship the product. You deliver the product to the customer and confirm shipment or let Amazon fulfill the order for you through FBA or Easy ship. Amazon will deposit the funds into your bank account after deducting our fees.
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            What are the return guidelines?
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol>
+                <li>Your address and the item that you wish to return must be eligible for return.</li>
+                <li>If the return is not eligible for Pickup, a Self-Return option will be given.</li>
+                <li>Once the return is received, you will, in accordance with Amazon.in Refund Policy, be issued a refund to your original payment method.</li>
+            </ol>
+        </div>
+        </div>
+      </div>
+    
+
+  </div>
+</div>
+</div>
+</div>
+
+<footer class="container-fluid bg-primary text-white">
+  <div class="row">
+
+    
+      <div class="col-md-3">
+        <h4 class=" mt-2 mb-4 fs-5 text-center text-uppercase shadow-lg ">Quick Links</h4>    
+        <p class="text-center lh-lg "><a href="homewebsite.html" class="text-white text-decoration-none ">Home</a><br>
+          <a href="aboutwebsite.html" class="  text-white text-decoration-none ">About</a><br>
+          <a href="amazonprimewebsite.html" class="  text-white text-decoration-none ">Amazon Prime</a><br>
+          <a href="serviceswebsite.html" class="  text-white text-decoration-none ">Services</a><br>
+        </p>
+      </div>
+
+      <div class="col-md-3">
+        <div>
+          <h4 class="bg-primary mt-2 mb-4  fs-5 text-center text-uppercase shadow-lg">Mail Us</h4>    
+          <p class="text-center lh-base"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="mx-1 mb-1 " fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+          </svg>Flipkart Internet Private Limited,
+  
+            <br>Buildings Alyssa, Begonia &
+            
+            Clove Embassy Tech Village,
+            
+            Outer Ring Road, Devarabeesanahalli Village,
+            
+            <br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mx-1 mb-1 "  fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>Bengaluru, 560103,
+            
+            Karnataka, India</p>
+      </div>
+  </div>
+
+  <div class="col-md-3">
+    <div>
+      <h4 class="bg-primary mt-2 mb-4 fs-5 text-center text-uppercase shadow-lg">Registered Office Address:</h4>    
+      <p class="text-center lh-base"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mx-1 mb-1" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+      </svg>Flipkart Internet Private Limited,<br><span class="mx-4">Begonia &
+                             Clove Embassy Tech </span><br><span>Village,Buildings Alyssa,</span> Outer Ring Road, Devarabeesanahalli 
+                             Village,<br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mx-1 mb-1 " fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>Bengaluru, 560103,Karnataka, India.<br>
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mx-1 mb-1 " fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                            </svg>CIN : U51109KA2012PTC066107<br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mx-1 mb-1 " fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>Telephone: 1800 202 9898</p>
+  </div>
+</div>
+
+  <div class="col-md-3 ">
+    <h4 class="bg-primary mt-2 mb-4 fs-5 text-center text-uppercase shadow-lg">Follow Us On</h4>
+      <p class="text-center lh-lg"><a href="#"  class=" text-white text-decoration-none  ">Facebook</a><br>
+      <a href="#"  class="text-white text-decoration-none ">Twitter</a><br>
+      <a href="#"  class="text-white text-decoration-none ">YouTube</a><br>
+      <a href="#"  class=" text-white text-decoration-none ">Instagram</a><br>
+
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook mx-1" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+      </span>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter mx-1" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg>
+      </span>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube mx-1" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </svg>
+      </span>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram mx-1" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+      </span>
+    </p>
+    </ul>
+  </div>
+
+  <div class="bg-dark pt-2">
+    <p class="text-center">Copyright &copy; 1996-2021,Amazon.com,Inc. or its affiliates.All right reserved</p>
+</div>
+</footer>
+
+
+        <!-- modal code goes here -->
+  <!-- Modal1 -->
+  <div class="modal fade " id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign In To Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+            <form>
+              <div class="input-group-sm form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating input-group-sm mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+                <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-bs-dismiss="modal" class="btn btn-white" data-bs-toggle="modal"  data-bs-target="#signup" >New here? Click to sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal2 -->
+<div class="modal fade " id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign In To Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form  class="row g-3 needs-validation" novalidate>
+              <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+                <div class="mb-3">
+                    <label for="exampleInputNumber1" class="form-label">Enter your mobile number</label>
+               <input type="number" class="form-control" id="exampleInputNumber1">
+              </div>
+                
+                 <div class="mb-3">
+                  <label for="exampleInputPassword2" class="form-label">Create Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2">
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      By clicking,you are agree to amazon's terms and conditions
+                    </label>
+                   </div>
+                           
+                 <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery.bxslider.min.css" rel="stylesheet">
+  <link href="css/jquery-ui.min.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
