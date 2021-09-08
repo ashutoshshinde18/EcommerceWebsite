@@ -1,0 +1,36 @@
+@media (max-width:510px){
+    .box iframe{
+        margin-left: 32px;
+        }
+    .box p{
+        text-align: center;
+    }
+}   
+
+
+.card img{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.card{
+    border-width: 0px   ;
+}
+
+.greatheading{
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(6, 17, 170, 0.945);
+    background-color: darkgrey;
+}
+
+.greatheading::after{
+    content: '';
+    background-color:darkblue;
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    left: calc(50% - 10%);
+    bottom: -18%;
+}
