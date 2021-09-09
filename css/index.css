@@ -22,7 +22,6 @@
     position: relative;
     font-family: 'Poppins', sans-serif;
     color: rgba(6, 17, 170, 0.945);
-    background-color: darkgrey;
 }
 
 .greatheading::after{
@@ -40,7 +39,6 @@
     position: relative;
     font-family: 'Poppins', sans-serif;
     color: rgba(6, 17, 170, 0.945);
-    background-color: darkgrey;
 }
 
 .checkoutheading::after{
