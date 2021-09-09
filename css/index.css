@@ -34,3 +34,21 @@
     left: calc(50% - 10%);
     bottom: -18%;
 }
+
+.checkoutheading{
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(6, 17, 170, 0.945);
+    background-color: darkgrey;
+}
+
+.checkoutheading::after{
+    content: '';
+    background-color:darkblue;
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    left: calc(50% - 10%);
+    bottom: -18%;
+}
