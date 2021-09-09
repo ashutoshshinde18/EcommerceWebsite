@@ -1,0 +1,35 @@
+@media (max-width:510px){
+    .box iframe{
+        margin-left: 32px;
+        }
+    .box p{
+        text-align: center;
+    }
+}   
+
+
+.card img{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.card{
+    border-width: 0px   ;
+}
+
+
+
+#fashion{
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(90deg,#0052D4,#4364F7,#6FB1FC); 
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.saleheading{
+    font-family: 'Comfortaa', cursive;
+}
+
